@@ -1,0 +1,20 @@
+{
+  "name": "local-llm-guard",
+  "version": "1.0.0",
+  "description": "Call a local LLM on the workstation you are using, without making it unusable.",
+  "license": "MIT",
+  "type": "module",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "files": ["src"],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["llm", "ollama", "local-llm", "llama-cpp", "inference", "rate-limiting", "typescript", "bun"],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}
